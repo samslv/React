@@ -30,7 +30,9 @@ class App extends Component {
         <h1>Filerobot Image Editor
         Prueba 1
         </h1>
-
+        <h1>
+          Prueba 2
+        </h1>
         <img src={imgSrc} onClick={this.showImageEditor} alt="example image" />
 
         <FilerobotImageEditor

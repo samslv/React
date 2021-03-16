@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import elasticsearch from "elasticsearch";
 
 let client = new elasticsearch.Client({
-    host: "localhost:9200"
+    host: "http://82.223.243.103:9200"
     // ,
     // log: "trace"
 });
@@ -34,7 +34,7 @@ class ViewComponent extends Component {
         // this.setState({ txtAreaValue: event.target.value });
         client
             .search({
-                index: "datos2",
+                index: "datos3",
                 body: {
                     query: {
                         bool: {
